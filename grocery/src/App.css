@@ -5,3 +5,21 @@
 .header {
   text-align: center;
 }
+
+.main {
+  display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.basket, .groceries {
+  text-align: center;
+}
+
+
+

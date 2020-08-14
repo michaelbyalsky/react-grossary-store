@@ -7,7 +7,7 @@ function App() {
     <>
     <header className="header"><h1>My Grocery Store</h1></header>
     <div >
-      <ShowProducts className="productsList"/>
+      <ShowProducts id="productsList"/>
     </div>
     </>
   );
