@@ -5,6 +5,8 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import CheckIcon from '@material-ui/icons/CheckCircleOutline';
+import ListItemText from '@material-ui/core/ListItemText';
+
 
 
 function BasketList({ products, onProductBought, onProductDelete }) {

@@ -3,6 +3,11 @@ import MyList from './listItem';
 import BasketList from './basketList';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
+import EcoIcon from '@material-ui/icons/Eco';
+import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+import ListItem from '@material-ui/core/ListItem';
+import List from '@material-ui/core/List';
+
 
 
 let products = [
@@ -65,7 +70,7 @@ function ShowProducts() {
         {/* <h1>products</h1> */}
         {/* {JSON.stringify(chosenProduct)} */}
         <div className="Groceries">
-            <h2>Groceries</h2>
+            <h2>  <EcoIcon />Groceries</h2>
         <MyList className="MyList" products={productsList} onProductSelect={(product) => {
             if (chosenProduct.includes(product)) {
                 product.howMany += 1
@@ -77,7 +82,7 @@ function ShowProducts() {
         }}/>
         </div>
         <div className="basket">
-            <h2>Basket</h2>
+            <h2><ShoppingBasketIcon />Basket</h2>
        <BasketList className="BasketList"
        products={chosenProduct} 
        onProductBought={(product) => {

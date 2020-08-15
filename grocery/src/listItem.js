@@ -7,9 +7,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import IconButton from '@material-ui/core/IconButton';
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
-
-
-
+import ListItemText from '@material-ui/core/ListItemText';
 
 function MyList({ products, onProductSelect }) {
 
@@ -18,11 +16,11 @@ function MyList({ products, onProductSelect }) {
             {
                 products.map((product, i) => {
                     return (
-                        <ListItem key={i}>
+                        <ListItemText key={i}>
                           <IconButton color="primary" aria-label="add to shopping cart" onClick={() => onProductSelect(product)}> 
                           <AddShoppingCartIcon /></IconButton>
                             {product.name}
-                        </ListItem>
+                        </ListItemText>
                     )
                 })
             }
