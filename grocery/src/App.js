@@ -12,7 +12,7 @@ function App() {
       <ShowProducts id="productsList"/>
     </div>
     <footer className="footer">
-    <h3><CopyrightIcon/>Michael Byalsky</h3>
+    <h3 className="copy"><CopyrightIcon/>Michael Byalsky</h3>
     </footer>
     </>
   );

@@ -3,6 +3,7 @@
 }
 
 .header {
+  display: grid;
   text-align: center;
   height: 15vh;
   background-color:  rgb(224, 210, 210);
@@ -18,11 +19,12 @@
 }
 
 .main {
-  display: grid;
+display: grid;
  grid-template-columns: repeat(2, 50%);
  background-color: rgb(224, 210, 210);
  justify-items: center;
  margin: 0;
+
 }
 
 .header {
@@ -45,11 +47,13 @@
 }
 
 .footer {
+  display: grid;
   background-color: black;
   height: 10vh;
   color: white;
   text-align: center;
+  justify-content: center;
+  align-content: center;
 }
-
 
 
