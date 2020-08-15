@@ -15,7 +15,7 @@ function BasketList({ products, onProductBought, onProductDelete }) {
             {
                 products.map((product, i) => {
                     return (
-                        <ListItem style={ product.isDone ? {
+                        <ListItem button={true} style={ product.isDone ? {
                             textDecoration : 'line-through'
                         } : 
                         {}

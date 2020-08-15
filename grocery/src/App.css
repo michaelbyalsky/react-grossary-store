@@ -4,12 +4,25 @@
 
 .header {
   text-align: center;
+  height: 15vh;
+  background-color:  rgb(224, 210, 210);
+}
+
+.search {
+  text-align: center;
+  background-color: rgb(224, 210, 210);
+}
+
+.container {
+  background-color: rgb(224, 210, 210);
 }
 
 .main {
-  display: flex;
- flex-direction: row;
- justify-content: space-evenly;
+  display: grid;
+ grid-template-columns: repeat(2, 50%);
+ background-color: rgb(224, 210, 210);
+ justify-items: center;
+ margin: 0;
 }
 
 .header {
@@ -17,7 +30,24 @@
   justify-content: center;
 }
 
-.basket, .groceries {
+.Groceries, .Basket {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  align-content: center;
+}
+
+.listItem{
+ color: transparent;
+}
+
+.listItem:hover {
+  background-color: rgb(178, 183, 189);
+}
+
+.footer {
+  background-color: black;
+  height: 10vh;
+  color: white;
   text-align: center;
 }
 

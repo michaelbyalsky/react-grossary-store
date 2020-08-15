@@ -8,19 +8,21 @@ import ListItem from '@material-ui/core/ListItem';
 import IconButton from '@material-ui/core/IconButton';
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import ListItemText from '@material-ui/core/ListItemText';
+import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
+
 
 function MyList({ products, onProductSelect }) {
 
     return (
-        <List>
+        <List >
             {
                 products.map((product, i) => {
                     return (
-                        <ListItemText key={i}>
+                        <ListItem className="listItem" button={true} key={i}>
                           <IconButton color="primary" aria-label="add to shopping cart" onClick={() => onProductSelect(product)}> 
-                          <AddShoppingCartIcon /></IconButton>
+                          <AddShoppingCartIcon color="action"/></IconButton>
                             {product.name}
-                        </ListItemText>
+                        </ListItem>
                     )
                 })
             }

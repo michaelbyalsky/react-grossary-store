@@ -7,6 +7,7 @@ import EcoIcon from '@material-ui/icons/Eco';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import ListItem from '@material-ui/core/ListItem';
 import List from '@material-ui/core/List';
+import Container from '@material-ui/core/Container';
 
 
 
@@ -62,13 +63,12 @@ function ShowProducts() {
       
     return (
         <>
-        <header className="header">
+        <div class="container">
+        <header className="search">
         <TextField  alignItems="center" justify="center" onChange={handleChange} id="outlined-basic" label="Search" variant="outlined"
         />
         </header>
         <div className="main">
-        {/* <h1>products</h1> */}
-        {/* {JSON.stringify(chosenProduct)} */}
         <div className="Groceries">
             <h2>  <EcoIcon />Groceries</h2>
         <MyList className="MyList" products={productsList} onProductSelect={(product) => {
@@ -77,11 +77,10 @@ function ShowProducts() {
                 setChosenProduct([...chosenProduct]);
             } else {
                 setChosenProduct([...chosenProduct, product]);
-                console.log([...chosenProduct])
             }
         }}/>
         </div>
-        <div className="basket">
+        <div className="Basket">
             <h2><ShoppingBasketIcon />Basket</h2>
        <BasketList className="BasketList"
        products={chosenProduct} 
@@ -104,6 +103,7 @@ function ShowProducts() {
                 } 
             })
             }}/>
+        </div>
         </div>
         </div>
         </>
